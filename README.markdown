@@ -38,7 +38,7 @@ simple run once with
 `puppet apply -e include pe_license`
 
 assured
-add include pe_license to a profile for your CA puppet master and add teh profile to the "PE Certificate Authority" node group
+The puppet license is managed by PE so once it's deployed the class is not required.
 
 ## Reference
 
@@ -63,4 +63,4 @@ see CONTRIBUTING.md
 ## Release Notes/Contributors/Etc **Optional**
 
 If you aren't using changelog, put your release notes here (though you should consider using changelog). You may also add any additional sections you feel are necessary or important to include here. Please use the `## ` header.
-Initial custom fact taken from https://github.com/fvoges/puppet-pe_license_fact 
+Initial custom fact taken from https://github.com/fvoges/puppet-pe_license_fact
