@@ -10,15 +10,12 @@
 #   Explanation of what this parameter affects and what it defaults to.
 #   e.g. "Specify one or more upstream ntp servers as an array."
 #
-class pe_license (
-  $package_name = $::pe_license::params::package_name,
-  $service_name = $::pe_license::params::service_name,
-) inherits ::pe_license::params {
+class pe_license(
+
+ )inherits ::pe_license::params {
 
   # validate parameters here
 
-  class { '::pe_license::install': } ->
-  class { '::pe_license::config': } ~>
-  class { '::pe_license::service': } ->
+  class { '::pe_license::install': }
   Class['::pe_license']
 }

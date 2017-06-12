@@ -2,7 +2,7 @@
 #The intent is to enable Puppet Query Language to be used to report the licensed nodes
 #
 # The values should be directly usable for monitoring and logging also
-#
+# initial fact from https://github.com/fvoges/puppet-pe_license_fact
 
 require 'facter'
 require 'yaml'
